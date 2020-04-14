@@ -7,11 +7,9 @@ You will learn how to set up, run, and iteratively develop a simple REST applica
 ### What is Docker?
 Docker is a tool that you can use to deploy and run applications with containers. You can think of Docker like a virtual machine that runs various applications. However, unlike a typical virtual machine, you can run these applications simultaneously on a single system and independent of one another.
 
-Learn more about Docker on the [official Docker website.](https://www.docker.com/why-docker)
+If you are interested learn more about Docker on the [official Docker website.](https://www.docker.com/why-docker)
 
-To install Docker, follow the instructions in the [official Docker documentation.](https://docs.docker.com/engine/install/)
-
-What is a container?
+### What is a container?
 A container is a lightweight, stand-alone package that contains a piece of software that is bundled together with the entire environment that it needs to run. Containers are small compared to regular images and can run on any environment where Docker is set up. Moreover, you can run multiple containers on a single machine at the same time in isolation from each other.
 
 Learn more about containers on the [official Docker website.](https://www.docker.com/resources/what-container)
@@ -25,9 +23,18 @@ The implementation of the REST application can be found in the **start/src** dir
 
 To iteratively develop your application in a container, first build it with Maven and add it to the servers of your choice. Second, create a Docker image that contains an Open Liberty runtime. Third, run this image and mount a single server directory or the directory that contains all of your servers to the container’s file system. Finally, run one of the mounted servers inside of a container.
 
-# Getting started
+## Getting Started
 
-Git clone the template project
+As an example:
+If a terminal window does not open navigate:
+
+> Terminal -> New Terminal
+
+Check you are in the **home/project** folder:
+
+`pwd`
+
+The fastest way to work through this guide is to clone the Git repository and use the projects that are provided inside:
 
 `git clone https://github.com/openliberty/guide-docker.git`
 
