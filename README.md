@@ -44,7 +44,9 @@ The **start** directory contains the starting project that you will build upon.
 
 # Building your application
 
-Before you begin, build your application. To do this, navigate to the **start** directory and run the Maven install goal:
+Navigate to the **start** directory and run the Maven install goal to build your application:
+
+`cd start`
 
 `mvn install`
 
