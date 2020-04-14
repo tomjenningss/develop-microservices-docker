@@ -87,6 +87,12 @@ When Docker runs a build, it sends all of the files and directories that are loc
 
 A **.dockerignore** file is available to you in the **start** directory. This file includes the **src** directory, the **pom.xml** file, and some system files. Feel free to add anything else that you want to exclude.
 
+```
+.DS_Store
+src/
+pom.xml
+```
+
 # Building the image
 
 If you execute your build from the same directory as your Dockerfile, (which you are) you can use the period character (.) notation to specify the location for the build context. Otherwise, (if you weren't you could) use the **-f** flag to point to your Dockerfile.
